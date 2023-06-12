@@ -6,10 +6,9 @@
 }
 
 body {
-    background-image: url(img/fondogato.jpg) ;
+    background-image: url(img/fondoperro.jpg) ;
     background-size: cover;
     background-repeat: no-repeat;
-
 }
 
 ::section {
@@ -19,60 +18,91 @@ body {
 
 /* barra de navegacion */
 
+header {
+    background-color: #333;
+    color: #fff;
+}
+
 nav {
-    background-color: #1b1b1b;
-    width: 100%;
-    padding: 10px 0;
-    z-index: 12;
-}
-
-nav .menu {
-    max-width: 1250px;
-    margin: auto;
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    padding: 0 20px;
+    align-items: center;
+    padding: 10px;
 }
 
-.menu .logo h1 {
-    text-decoration: none;
+.logo a {
     color: #fff;
-    font-size: 35px;
-    font-weight: 600;
-}
-
-.menu ul {
-    display: inline-flex;
-}
-
-.menu ul li {
-    list-style: none;
-    margin-left: 7px;
-}
-
-.menu ul li:first-child {
-    margin-left: 0px;
-}
-
-.menu ul li a {
     text-decoration: none;
-    color: #fff;
-    font-size: 18px;
-    font-weight: 500;
-    padding: 8px 15px;
-    border-radius: 5px;
-    transition: all 0.3s ease;
-}
-
-.menu ul li a:hover {
-    background: #fff;
-    color: #1b1b1b;
+    font-size: 20px;
 }
 
 .logo span {
     color: coral;
 }
+
+.nav-links {
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+    list-style: none;
+}
+.nav-links li a {
+    padding: 20px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    padding: 10px;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu li {
+    margin-bottom: 10px;
+}
+
+.dropdown-menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+    
+.cart {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.cart-count {
+    background-color: #ff0000;
+    color: #fff;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    position: absolute;
+    top: -8px;
+    right: -8px;
+}
+  
+.cart img {
+    width: 25px;
+    height: 25px;
+    margin-left: 10px;
+}
+
 /* inicio de la pagina */
 
 .container {
@@ -85,7 +115,6 @@ nav .menu {
     color: red;
 }
 
-
 /*item1*/
 
 
@@ -96,8 +125,7 @@ nav .menu {
 .col {
     background-color: rgba(0, 255, 255, 0);
     width: 100%;
-    height: 
-    320px;
+    height: 320px;
     margin: 5px;
     justify-content:center ;
     display: flex;
@@ -148,10 +176,6 @@ nav .menu {
 
 /*item2*/
 
-.item2 h3 {
-    color: grey;
-}
-
 .row2 {
     display: flex;
 }
@@ -164,7 +188,11 @@ nav .menu {
     justify-content:center ;
     display: flex;
 }
+ 
 
+.item2 h3 {
+    color: grey;
+}
 
 .item2 {
     width: 300px;
@@ -248,6 +276,7 @@ nav .menu {
 
 .item3 .precio {
     font-weight: bold;
+    
 }
 
 .item3 .boton-comprar {
